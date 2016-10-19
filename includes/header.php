@@ -2,20 +2,12 @@
 <html>
 <head>
 	<title>SoccerGamble</title>
+	
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/kube.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 <body>
-	<div class="nav">
-		<div class="wrapper">
-			LOGO
-
-			<ul>
-				<li>Home</li>
-				<li>Inloggen/Registreren</li>
-				<li>Wedstrijden</li>
-				<li>Informatie</li>
-				<li>Contact</li>
-			</ul>
-		</div>
-	</div>
+	
+	<?php include('includes/navbar.php'); ?>

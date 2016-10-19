@@ -4,4 +4,3 @@
 		<?php include('includes/main_page.php'); ?>
 	</div>
 
-<?php include('includes/footer.php'); ?>

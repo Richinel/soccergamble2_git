@@ -1,6 +1,8 @@
 body {
-  background: white;
-  font-family: 'Raleway';
+  background: url('../images/cl1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Dosis';
 }
 h1,
 h2,
@@ -8,34 +10,44 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Raleway';
+  font-family: 'Dosis';
+}
+a {
+  text-decoration: none;
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Dosis';
   font-style: normal;
-  font-weight: 400;
-  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/yQiAaD56cjx1AooMTSghGfY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  font-weight: 300;
+  src: local('Dosis Regular'), local('Dosis-Regular'), url(https://fonts.gstatic.com/s/dosis/v6/RlBXAIuiO5GvH9-0-JbBlw.woff2) format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Dosis';
   font-style: normal;
-  font-weight: 400;
-  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+  font-weight: 300;
+  src: local('Dosis Regular'), local('Dosis-Regular'), url(https://fonts.gstatic.com/s/dosis/v6/4hYyXH_8WmbBLamf6WjLwg.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 .nav {
   width: 100%;
+  position: fixed;
   height: 70px;
   background-color: #333;
   color: white;
   line-height: 70px;
+  opacity: 0.9;
+}
+.nav .decorative {
+  background: url('../images/burberry_pattern.png');
+  width: 100%;
+  height: 3px;
 }
 .nav .wrapper {
   width: 95%;
-  max-width: 1300px;
+  max-width: 1370px;
   margin: auto;
   position: relative;
   padding: 0;
@@ -46,15 +58,130 @@ h6 {
   top: 0px;
 }
 .nav .wrapper ul li {
-  display: inline-block;
+  display: inline;
   margin-left: 30px;
+  padding-bottom: 5px;
+  transition: 50ms ease-in;
+}
+.nav .wrapper ul li a {
+  color: white;
+}
+.nav .wrapper ul li:hover {
+  border-bottom: 3px solid white;
 }
 .wrapper {
   width: 95%;
-  max-width: 1300px;
+  max-width: 1370px;
   margin: auto;
   padding: 10px 0;
 }
+.main_page {
+  margin: 90px 0;
+}
 .main_page h1 {
   text-align: center;
+  color: white;
+}
+.main_page p {
+  text-align: center;
+  color: white;
+}
+.main_page img {
+  width: 400px;
+  display: block;
+  margin: auto;
+  opacity: 0.6;
+}
+.goto .row .col {
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 2px;
+  margin: 30px 0;
+  transition: 150ms ease-in;
+  color: white;
+}
+.goto .row .col i {
+  width: 27px;
+}
+.goto .row .col h3 {
+  color: white;
+}
+.goto .row .col p {
+  padding-left: 35px;
+}
+.goto .row .col:hover {
+  border: 1px solid white;
+  opacity: 1.0;
+}
+.page_content {
+  margin: 0;
+  background-color: white;
+  padding-top: 30px;
+}
+.page_content .title_box {
+  background: url('../images/geometry2.png');
+  width: 100%;
+  min-height: 300px;
+  text-align: center;
+}
+.page_content .title_box h1 {
+  line-height: 300px;
+}
+.page_content .title_box .wrapper {
+  padding-top: 0px !important;
+}
+.recents {
+  width: 100%;
+  background: #e6e6e6;
+  min-height: 50px;
+  line-height: 60px;
+}
+.recents .col {
+  position: relative;
+}
+.recents .col h3 {
+  line-height: 60px;
+}
+.recents .col:nth-child(1) {
+  text-align: right;
+}
+.recents .col:nth-child(2) {
+  text-align: center;
+}
+footer {
+  background-color: #f3f3f3;
+  width: 100%;
+  min-height: 200px;
+  height: auto;
+}
+footer .wrapper ul {
+  list-style-type: none;
+  margin: 0 !important;
+}
+footer .wrapper ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+footer .wrapper ul li:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: FontAwesome;
+  content: "\f101";
+  color: green;
+}
+@media screen and (max-width: 768px) {
+  .nav ul {
+    display: none;
+  }
+  .recents .col:nth-child(1) {
+    text-align: center !important;
+  }
+  .recents .col:nth-child(2) {
+    text-align: center !important;
+  }
+  .recents .col:nth-child(3) {
+    text-align: center !important;
+  }
 }
