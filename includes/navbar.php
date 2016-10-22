@@ -15,7 +15,11 @@
 				</a>
 			</li>
 			<li>Contact</li>
-			<li>Inloggen/Registreren</li>
+			<li>
+				<a href="register">
+					Inloggen / Registreren
+				</a>
+			</li>
 		</ul>
 	</div>
 </div>

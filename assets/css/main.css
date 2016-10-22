@@ -34,11 +34,13 @@ a {
 .nav {
   width: 100%;
   position: fixed;
+  top: 0;
   height: 70px;
   background-color: #333;
   color: white;
   line-height: 70px;
   opacity: 0.9;
+  z-index: 999;
 }
 .nav .decorative {
   background: url('../images/burberry_pattern.png');
@@ -75,6 +77,26 @@ a {
   margin: auto;
   padding: 10px 0;
 }
+.content {
+  width: 100%;
+  height: auto;
+}
+.register {
+  background: white;
+  padding-top: 100px;
+}
+.row-800 {
+  max-width: 1000px;
+}
+.divided {
+  border-right: 1px solid #cdcdcd;
+}
+.row_divided .col:nth-child(1) {
+  padding-right: 80px;
+}
+.row_divided .col:nth-child(2) {
+  padding-left: 80px;
+}
 .main_page {
   margin: 90px 0;
 }
@@ -96,8 +118,11 @@ a {
   border: 1px solid grey;
   padding: 10px;
   border-radius: 2px;
-  margin: 30px 0;
+  margin: 10px 0;
   transition: 150ms ease-in;
+  color: white;
+}
+.goto .row .col a {
   color: white;
 }
 .goto .row .col i {
@@ -121,32 +146,85 @@ a {
 .page_content .title_box {
   background: url('../images/geometry2.png');
   width: 100%;
-  min-height: 300px;
+  min-height: 200px;
   text-align: center;
 }
 .page_content .title_box h1 {
-  line-height: 300px;
+  line-height: 200px;
 }
 .page_content .title_box .wrapper {
   padding-top: 0px !important;
 }
 .recents {
   width: 100%;
-  background: #e6e6e6;
   min-height: 50px;
   line-height: 60px;
 }
-.recents .col {
-  position: relative;
+.recents .recents_item {
+  margin: 20px 0;
 }
-.recents .col h3 {
+.recents .recents_item span {
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+}
+.recents .recents_item .col {
+  position: relative;
+  background: #e6e6e6;
+}
+.recents .recents_item .col h3 {
   line-height: 60px;
 }
-.recents .col:nth-child(1) {
+.recents .recents_item .col:nth-child(1) {
   text-align: right;
 }
-.recents .col:nth-child(2) {
+.recents .recents_item .col:nth-child(2) {
   text-align: center;
+}
+.register form input {
+  width: 100%;
+}
+.modal2 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  display: none;
+}
+.modal2 .modal_content {
+  max-width: 800px;
+  width: 95%;
+  height: auto;
+  background-color: white;
+  margin-top: 100px !important;
+  margin: auto;
+  border-radius: 4px;
+  border: 1px solid #333;
+  box-shadow: 0 0 10px #333333;
+}
+.modal2 .modal_content .modal_header {
+  width: 100%;
+  height: 25px;
+  background: linear-gradient(#595959, #333333);
+  /* Standard syntax (must be last) */
+  color: white;
+  padding: 0 15px;
+  border-radius: 2px 2px 0 0;
+  position: relative;
+}
+.modal2 .modal_content .modal_header i {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+}
+.modal2 .modal_content .modal_body {
+  width: 100%;
+  padding: 10px 15px;
 }
 footer {
   background-color: #f3f3f3;
@@ -171,6 +249,9 @@ footer .wrapper ul li:before {
   content: "\f101";
   color: green;
 }
+.clickable {
+  cursor: pointer;
+}
 @media screen and (max-width: 768px) {
   .nav ul {
     display: none;
@@ -183,5 +264,18 @@ footer .wrapper ul li:before {
   }
   .recents .col:nth-child(3) {
     text-align: center !important;
+  }
+  .divided {
+    border-right: none;
+    border-bottom: 1px solid #cdcdcd;
+  }
+  .row_divided .col:nth-child(1) {
+    padding-right: 0px;
+  }
+  .row_divided .col:nth-child(2) {
+    padding-left: 0px;
+  }
+  .modal2 .modal_content {
+    margin-top: 20px !important;
   }
 }

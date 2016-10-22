@@ -10,7 +10,7 @@ function saveText($text) {
 
 $username = mysqli_real_escape_string($conn, saveText($_POST['username']));
 $password = mysqli_real_escape_string($conn, saveText($_POST['password']));
-$sql = "SELECT * FROM gebruiker WHERE username = '$username' AND password = '$password'";
+$sql = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
 $result = $conn->query($sql);
 
 while($row = $result->fetch_assoc()) {
@@ -20,7 +20,7 @@ while($row = $result->fetch_assoc()) {
 	$_SESSION['lastname'] 	= $row['lastname'];
 	$_SESSION['email'] 		= $row['email'];
 	$_SESSION['credits'] 	= $row['credits'];
-	header('Location: ../');
+	header('Location: /soccergamble2_git/index.php');
 }
 echo "<div class='alert'>Je gegevens kloppen niet bruur wtf man wat doe je =(</div>";
 

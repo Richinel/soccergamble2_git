@@ -12,14 +12,17 @@
 
 	<div class="goto">
 		<div class="row centered between">
-		    <div class="col col-3">
-		    	<h3>
-		    		<i class="fa fa-futbol-o" aria-hidden="true"></i>
-		    		Wedstrijden
-		    	</h3>
+			<div class="col col-3">
+			    <a href="matches">
+			    	<h3>
+			    		<i class="fa fa-futbol-o" aria-hidden="true"></i>
+			    		Wedstrijden
+			    	</h3>
 
-		    	<p>Ga direct naar de wedstrijden</p>
-		    </div>
+			    	<p>Ga direct naar de wedstrijden</p>
+			   	</a>
+			</div>
+		   
 
 		    <div class="col col-3">
 		    	<h3>
