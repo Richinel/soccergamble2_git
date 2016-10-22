@@ -8,6 +8,10 @@ body {
 	font-family: 'Dosis';
 }
 
+fieldset {
+  font-family: 'Dosis';
+}
+
 h1,
 h2,
 h3,
@@ -46,7 +50,7 @@ a {
   background-color: #333;
   color: white;
   line-height: 70px;
-  opacity: 0.9;
+  opacity: 0.95;
   z-index: 999;
 
   .decorative {
@@ -185,16 +189,17 @@ a {
 .page_content {
   margin: 0;
   background-color: white;
-  padding-top: 30px;
+  padding-top: 70px;
 
   .title_box {
-    background: url('../images/geometry2.png');
+    background: url('../images/pattern2.png');
     width: 100%;
     min-height: 200px;
     text-align: center;
     
     h1 {
       line-height: 200px;
+      color: white;
     }
 
     .wrapper {
@@ -211,27 +216,36 @@ a {
   .recents_item {
     margin: 20px 0;
 
-    span {
-      font-weight: bold;
-      display: block;
-      text-align: center;
-      font-size: 20px;
-    }
+    .row {
+      opacity: 0.8;
+      transition: 50ms ease-in;
 
-    .col {
-      position: relative;
-      background: lighten(grey, 40%);
-
-      h3 {
-        line-height: 60px;
-      }
-
-      &:nth-child(1) {
-        text-align: right;
-      }
-
-      &:nth-child(2) {
+      span {
+        font-weight: bold;
+        display: block;
         text-align: center;
+        font-size: 20px;
+      }
+
+      .score {
+        font-size: 30px;
+      }
+
+      .col {
+        position: relative;
+        background: lighten(grey, 40%);
+
+        &:nth-child(1) {
+          text-align: right;
+        }
+
+        &:nth-child(2) {
+          text-align: center;
+        }
+      }
+
+      &:hover {
+        opacity: 1.0;
       }
     }
   }
