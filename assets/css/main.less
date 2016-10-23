@@ -25,6 +25,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-size: 17px;
+}
+
 /* latin-ext */
 @font-face {
   font-family: 'Dosis';
@@ -52,6 +56,7 @@ a {
   line-height: 70px;
   opacity: 0.95;
   z-index: 999;
+  box-shadow: 0 0 15px #333333;
 
   .decorative {
     background: url('../images/burberry_pattern.png');
@@ -65,6 +70,11 @@ a {
     margin: auto;
     position: relative;
     padding: 0;
+
+    .header_logo {
+      height: 55px;
+      margin-top: 5px;
+    }
 
     ul {
       position: absolute;
@@ -83,6 +93,38 @@ a {
 
         &:hover {
           border-bottom: 3px solid white;
+        }
+      }
+    }
+  }
+}
+
+.mobile_menu {
+  position: fixed;
+  top: 70px;
+  font-size: 17px;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  color: white;
+  background-color: lighten(#333, 10%);
+  z-index: 999;
+  display: none;
+
+  ul {
+    margin-top: 20px;
+    list-style: none;
+
+    li {
+      margin-bottom: 10px;
+
+      a {
+        color: white;
+        text-decoration: none;
+        opacity: 0.7;
+
+        &:hover {
+          opacity: 1.0;
         }
       }
     }
@@ -141,6 +183,7 @@ a {
   p {
     text-align: center;
     color: white;
+    font-size: 17px;
   }
 
   img {
@@ -160,6 +203,7 @@ a {
       margin: 10px 0;
       transition: 150ms ease-in;
       color: white;
+      font-size: 17px;
 
       a {
         color: white;
@@ -200,6 +244,7 @@ a {
     h1 {
       line-height: 200px;
       color: white;
+      box-shadow: 0 0 10px #333333;
     }
 
     .wrapper {
@@ -259,6 +304,24 @@ a {
   }
 }
 
+.contact {
+  margin-top: 70px;
+  background-color: white;
+
+   .title_box {
+    background: url('../images/pattern3.png');
+    width: 100%;
+    min-height: 200px;
+    text-align: center;
+    
+    h1 {
+      line-height: 200px;
+      color: white;
+      box-shadow: 0 0 10px #333333;
+    }
+  }
+}
+
 //MODAL
 
 .modal2 {
@@ -270,6 +333,7 @@ a {
   background: rgba(0, 0, 0, 0.8);
   z-index: 999;
   display: none;
+  font-size: 17px;
 
   .modal_content {
     max-width: 800px;
@@ -307,12 +371,18 @@ a {
 }
 
 footer {
-  background-color: lighten(grey, 45%);
+  background-color: lighten(#333, 15%);
+  color: white;
   width: 100%;
   min-height: 200px;
   height: auto;
+  font-size: 17px;
 
   .wrapper {
+    .ul_head {
+      font-weight: bold;
+    }
+
     ul {
       list-style-type: none;
       margin: 0 !important;
@@ -329,7 +399,34 @@ footer {
         left: 0;
         font-family: FontAwesome;
         content: "\f101";
-        color: green;
+        color: grey;
+      }
+    }
+
+    table {
+      td {
+        padding: 0;
+        border: none;
+        padding-bottom: 2px;
+        color: white;
+
+        &:nth-child(odd) {
+          width: 30px;
+        }
+
+        i {
+          color: lighten(grey, 10%);
+        }
+
+        a {
+          text-decoration: none;
+          color: white;
+          transition: 75ms ease-in;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }       
       }
     }
   }
@@ -339,13 +436,29 @@ footer {
   cursor: pointer;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile_menu {
+    display: none !important;
+  }
+}
+
 
 @media screen and (max-width: 768px) {
   .nav {
     ul {
       display: none;
     }
+
+  .menu_container {
+      display: block;
+      top: 15px !important;
+      right: 5px;
+
+      div {
+          width: 35px;
+      }
   }
+}
 
   .recents {
     .col {
@@ -388,4 +501,39 @@ footer {
       margin-top: 20px !important;
     }
   }
+}
+
+//MENU BUTTON
+/*MENU BUTTON */
+.menu_container {
+    position: absolute;
+    right: 10px;
+    top: 40px !important;
+    display: none;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 50px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
 }

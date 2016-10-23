@@ -20,11 +20,14 @@ session_start();
 
 if(ISSET($_SESSION['username'])) {
 	include('includes/navbar_loggedin.php');
+	include('includes/mobile_menu_loggedin.php');
 	include('includes/modal.php');
 }
 else {
 	include('includes/navbar.php');
+	include('includes/mobile_menu.php');
 }
 
 ?>
+
 	

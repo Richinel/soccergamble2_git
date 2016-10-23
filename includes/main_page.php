@@ -34,12 +34,14 @@
 		    </div>
 
 		    <div class="col col-3">
-		    	<h3>
-		    		<i class="fa fa-phone-square" aria-hidden="true"></i>
-		    		Contact
-		    	</h3>
+		    	<a href="contact">
+			    	<h3>
+			    		<i class="fa fa-phone-square" aria-hidden="true"></i>
+			    		Contact
+			    	</h3>
 
-		    	<p>Klik hier om contact met ons op te nemen!</p>
+			    	<p>Klik hier om contact met ons op te nemen!</p>
+			    </a>
 		    </div>
 		</div>
 	</div>

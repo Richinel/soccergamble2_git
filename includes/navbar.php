@@ -1,7 +1,9 @@
 <div class="nav">
 	<div class="decorative"></div>
 	<div class="wrapper">
-		LOGO
+		<a href="index">
+			<img class="header_logo" src="assets/images/sg_logo_white.png">
+		</a>
 
 		<ul>
 			<li>
@@ -14,12 +16,22 @@
 					Wedstrijden
 				</a>
 			</li>
-			<li>Contact</li>
+			<li>
+				<a href="contact">
+					Contact
+				</a>
+			</li>
 			<li>
 				<a href="register">
 					Inloggen / Registreren
 				</a>
 			</li>
 		</ul>
+
+		<div class="menu_container" onclick="myFunction(this)">
+			<div class="bar1"></div>
+		 	<div class="bar2"></div>
+		 	<div class="bar3"></div>
+		</div>
 	</div>
 </div>

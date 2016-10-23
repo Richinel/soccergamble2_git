@@ -7,9 +7,13 @@ var main = function() {
     	$('.modal2').fadeToggle(300);
     }); 
 
-    $('.add_match_btn').click(function() {
-    	$('.add_match').fadeToggle(300);
+    $('.menu_container').click(function() {
+    	$('.mobile_menu').fadeToggle(300);
     }); 
 };
+
+function myFunction(x) {
+	x.classList.toggle("change");
+}
 
 $(document).ready(main);

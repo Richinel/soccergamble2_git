@@ -2,7 +2,7 @@
 	<div class="wrapper">
 		<div class="row centered between">
 		    <div class="col col-3">
-		    	<p>SoccerGamble</p>
+		    	<p class="ul_head">SoccerGamble</p>
 
 		    	<ul>
 		    		<li>Wedstrijden</li>
@@ -12,7 +12,7 @@
 		    </div>
 
 		    <div class="col col-3">
-		    <p>FAQ</p>
+		    	<p class="ul_head">FAQ</p>
 
 		    	<ul>
 		    		<li>Geld terugstorten</li>
@@ -22,7 +22,30 @@
 		    </div>
 
 		    <div class="col col-3">
-		    	CONTACT
+		    	<p class="ul_head">Contact</p>
+
+		    	<table>
+						<tr>
+							<td><i class="fa fa-map-marker" aria-hidden="true"></i></td>
+							<td>Stolwijkstraat 8</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>3079 DN Rotterdam</td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-envelope-o" aria-hidden="true"></i></td>
+							<td><a href="mailto: info@soccergamble.nl?subject=Vraag / Opmerking">info@soccergamble.nl</a></td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-phone" aria-hidden="true"></i></td>
+							<td><a href="tel: 010 292 9029">010 292 9029</a></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><a href="tel: 06 11 22 33 44">06 11 22 33 44</a></td>
+						</tr>
+					</table>
 		    </div>
 		</div>
 	</div>
