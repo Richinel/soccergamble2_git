@@ -1,6 +1,10 @@
 <?php include('includes/header.php'); ?>
 
 	<div class="content register">
+		<div class="title_box">
+			<h1 class="drop_shadow">Account</h1>	
+		</div>
+
 		<div class="wrapper">
 				<div class="row centered row-800 row_divided">
 					<div class="col divided">
