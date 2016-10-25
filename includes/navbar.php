@@ -26,6 +26,9 @@
 					Inloggen / Registreren
 				</a>
 			</li>
+			<li>
+				<i class="fa fa-search" aria-hidden="true"></i>
+			</li>
 		</ul>
 
 		<div class="menu_container" onclick="myFunction(this)">

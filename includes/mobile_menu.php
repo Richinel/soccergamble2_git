@@ -20,5 +20,10 @@
 				Inloggen/Registreren
 			</a>
 		</li>
+		<li>
+			<a href="#">
+				Zoeken
+			</a>
+		</li>
 	</ul>
 </div>
