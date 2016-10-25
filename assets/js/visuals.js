@@ -1,10 +1,14 @@
 var main = function() {
     $('.close2').click(function() {
-        $('.modal2').fadeToggle(300);
+        $('.modal2').fadeOut(300);
     }); 
 
 	$('.profile_btn').click(function() {
-    	$('.modal2').fadeToggle(300);
+    	$('#profile_modal').fadeToggle(300);
+    }); 
+
+    $('.search_btn').click(function() {
+        $('#search_modal').fadeToggle(300);
     }); 
 
     $('.menu_container').click(function() {

@@ -32,7 +32,7 @@
 				</span>
 			</li>
 			<li>
-				<i class="fa fa-search" aria-hidden="true"></i>
+				<i class="fa fa-search search_btn" aria-hidden="true"></i>
 			</li>
 		</ul>
 

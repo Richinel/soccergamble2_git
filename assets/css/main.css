@@ -305,6 +305,9 @@ p {
   width: 100%;
   padding: 10px 15px;
 }
+.search_modal {
+  display: none;
+}
 footer {
   background-color: #595959;
   padding: 40px 0;
