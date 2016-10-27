@@ -186,11 +186,11 @@ p {
 .page_content .title_box {
   background: url('../images/pattern2.png');
   width: 100%;
-  min-height: 200px;
+  min-height: 120px;
   text-align: center;
 }
 .page_content .title_box h1 {
-  line-height: 200px;
+  line-height: 120px;
   color: white;
   box-shadow: 0 0 10px #333333;
 }
@@ -237,11 +237,11 @@ p {
 .register .title_box {
   background: url('../images/pattern2.png');
   width: 100%;
-  min-height: 200px;
+  min-height: 120px;
   text-align: center;
 }
 .register .title_box h1 {
-  line-height: 200px;
+  line-height: 120px;
   color: white;
   box-shadow: 0 0 15px #333333;
 }
@@ -255,11 +255,11 @@ p {
 .contact .title_box {
   background: url('../images/pattern2.png');
   width: 100%;
-  min-height: 200px;
+  min-height: 120px;
   text-align: center;
 }
 .contact .title_box h1 {
-  line-height: 200px;
+  line-height: 120px;
   color: white;
   box-shadow: 0 0 10px #333333;
 }
