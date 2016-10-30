@@ -1,13 +1,15 @@
-<div class="modal2" id="search_modal">
-	<div class="modal_content">
-		<div class="modal_header">
-			Zoek
-			<i class="fa fa-times-circle close2" aria-hidden="true"></i>
-		</div>
-		<div class="modal_body">
-			<form>
+<div class="search_modal" id="search_modal">
+	<i class="fa fa-times-circle" id="close_search" aria-hidden="true"></i>
+	<form>
+		<div class="row">
+			<div class="col col-10">
 				<input type="text" name="search">
-			</form>
+			</div>
+			<div class="col col-2">
+				<button type="submit">
+					<i class="fa fa-search" id="search_i" aria-hidden="true"></i>
+				</button>
+			</div>
 		</div>
-	</div>
+	</form>
 </div>	

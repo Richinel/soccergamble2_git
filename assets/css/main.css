@@ -224,9 +224,15 @@ p {
 }
 .recents .recents_item .row .col:nth-child(1) {
   text-align: right;
+  background-color: #b3b3b3;
+  color: black;
 }
 .recents .recents_item .row .col:nth-child(2) {
   text-align: center;
+}
+.recents .recents_item .row .col:nth-child(3) {
+  background-color: #b3b3b3;
+  color: black;
 }
 .recents .recents_item .row:hover {
   opacity: 1.0;
@@ -262,6 +268,27 @@ p {
   line-height: 120px;
   color: white;
   box-shadow: 0 0 10px #333333;
+}
+.contact p:nth-child(1) {
+  text-align: center;
+}
+.contact .contact_row {
+  margin-bottom: 30px;
+}
+.contact #contact_form input {
+  width: 100%;
+}
+.contact .contact_options {
+  margin-top: 20px;
+}
+.contact .contact_options .col-3 {
+  padding: 10px;
+  text-align: center;
+}
+.contact .contact_options .col-3 .co_item {
+  border: 1px solid #b3b3b3;
+  padding: 10px;
+  border-radius: 3px;
 }
 .modal2 {
   position: fixed;
@@ -306,7 +333,60 @@ p {
   padding: 10px 15px;
 }
 .search_modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 999;
   display: none;
+  font-size: 17px;
+}
+.search_modal #close_search {
+  position: absolute;
+  color: white;
+  font-size: 35px;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+.search_modal form {
+  width: 95%;
+  max-width: 1370px;
+  margin: auto;
+  margin-top: 100px;
+}
+.search_modal form .row {
+  max-width: 800px;
+  margin: auto;
+}
+.search_modal form .row .col {
+  margin-top: 20px;
+}
+.search_modal form input {
+  width: 100%;
+  display: block;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 2px 0 0 2px;
+  height: 45px;
+  color: white;
+  font-size: 35px;
+}
+.search_modal form button {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 0 2px 2px 0;
+  display: block;
+  height: 45px;
+  margin: auto;
+  width: 150px !important;
+}
+.search_modal form button:hover {
+  background: white;
+  color: black;
 }
 footer {
   background-color: #595959;

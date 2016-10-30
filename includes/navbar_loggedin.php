@@ -1,5 +1,4 @@
 <div class="nav">
-	<div class="decorative"></div>
 	<div class="wrapper">
 		<a href="index">
 			<img class="header_logo" src="assets/images/sg_logo_white.png">

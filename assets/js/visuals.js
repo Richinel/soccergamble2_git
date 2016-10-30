@@ -3,6 +3,10 @@ var main = function() {
         $('.modal2').fadeOut(300);
     }); 
 
+    $('#close_search').click(function() {
+        $('.search_modal').fadeOut(300);
+    }); 
+
 	$('.profile_btn').click(function() {
     	$('#profile_modal').fadeToggle(300);
     }); 

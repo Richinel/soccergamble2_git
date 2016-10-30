@@ -282,10 +282,17 @@ p {
 
         &:nth-child(1) {
           text-align: right;
+          background-color: lighten(grey, 20%);
+          color: black;
         }
 
         &:nth-child(2) {
           text-align: center;
+        }
+
+        &:nth-child(3) {
+          background-color: lighten(grey, 20%);
+          color: black;
         }
       }
 
@@ -333,6 +340,37 @@ p {
       line-height: 120px;
       color: white;
       box-shadow: 0 0 10px #333333;
+    }
+  }
+
+  p {
+    &:nth-child(1) {
+      text-align: center;
+    }
+  }
+
+  .contact_row {
+    margin-bottom: 30px;
+  }
+
+  #contact_form {
+    input {
+      width: 100%;
+    }
+  }
+
+  .contact_options {
+    margin-top: 20px;
+
+    .col-3 {
+      padding: 10px;
+      text-align: center;
+
+      .co_item {
+        border: 1px solid lighten(grey, 20%);
+        padding: 10px;
+        border-radius: 3px;
+      }
     }
   }
 }
@@ -386,7 +424,67 @@ p {
 }
 
 .search_modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 999;
   display: none;
+  font-size: 17px;
+
+  #close_search {
+    position: absolute;
+    color: white;
+    font-size: 35px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+
+  form {
+    width: @width;
+    max-width: @max-width;
+    margin: auto;
+    margin-top: 100px;
+
+    .row {
+      max-width: 800px;
+      margin: auto;
+
+      .col {
+        margin-top: 20px;
+      }
+    }
+
+    input {
+      width: 100%;
+      display: block;
+      background-color: transparent;
+      border: 1px solid white;
+      border-radius: 2px 0 0 2px;
+      height: 45px;
+      color: white;
+      font-size: 35px;
+    }
+
+    button {
+      background: transparent;
+      color: white;
+      border: 1px solid white;
+      border-radius: 0 2px 2px 0;
+      display: block;
+      height: 45px;
+      margin: auto;
+      width: 150px !important;
+
+      &:hover {
+        background: white;
+        color: black;
+      }
+    }
+  }
 }
 
 footer {
