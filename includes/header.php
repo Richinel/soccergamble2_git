@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SoccerGamble</title>
+	<title><?php echo $title ?> | SoccerGamble</title>
 	
 	<meta name="viewport" content="width=device-width, maximum-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/kube.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/component.css">
+	<link rel="icon" type="image/x-icon" href="./favicon.ico" />
 
 	<script src="assets/js/jquery-3.1.1.min.js"></script>
 	<script src="assets/js/visuals.js"></script>
@@ -22,6 +23,7 @@ session_start();
 		include('includes/navbar_loggedin.php');
 		include('includes/mobile_menu_loggedin.php');
 		include('includes/profile_modal.php');
+		include('models/profile.php');
 	}
 	else {
 		include('includes/navbar.php');
@@ -29,7 +31,6 @@ session_start();
 	}
 
 	include('includes/search_modal.php');
-
 ?>
 
 	

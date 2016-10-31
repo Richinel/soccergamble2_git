@@ -350,17 +350,22 @@ p {
   }
 
   .contact_row {
-    margin-bottom: 30px;
+    //margin-bottom: 30px;
   }
 
   #contact_form {
     input {
       width: 100%;
     }
+
+    button {
+      width: 100%;
+      max-width: 300px;
+    }
   }
 
   .contact_options {
-    margin-top: 20px;
+    //margin-top: 20px;
 
     .col-3 {
       padding: 10px;
@@ -434,6 +439,13 @@ p {
   display: none;
   font-size: 17px;
 
+  h2 {
+    display: block;
+    text-align: center;
+    margin: auto;
+    color: white;
+  }
+
   #close_search {
     position: absolute;
     color: white;
@@ -446,8 +458,7 @@ p {
   form {
     width: @width;
     max-width: @max-width;
-    margin: auto;
-    margin-top: 100px;
+    margin: 100px auto auto;
 
     .row {
       max-width: 800px;
@@ -455,6 +466,7 @@ p {
 
       .col {
         margin-top: 20px;
+        padding: 0;
       }
     }
 
@@ -476,8 +488,8 @@ p {
       border-radius: 0 2px 2px 0;
       display: block;
       height: 45px;
-      margin: auto;
-      width: 150px !important;
+      //margin: auto;
+      width: 100%;
 
       &:hover {
         background: white;

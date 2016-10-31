@@ -21,7 +21,7 @@
 			</a>
 		</li>
 		<li>
-			<a href="#">
+			<a href="#" id="mobile_search">
 				Zoeken
 			</a>
 		</li>

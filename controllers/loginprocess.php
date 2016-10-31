@@ -8,10 +8,10 @@
 		return $cleaned;
 	}
 
-	$username = mysqli_real_escape_string($conn, saveText($_POST['username']));
-	$password = mysqli_real_escape_string($conn, saveText($_POST['password']));
-	$sql = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
-	$result = $conn->query($sql);
+	$username 	= mysqli_real_escape_string($conn, saveText($_POST['username']));
+	$password 	= mysqli_real_escape_string($conn, md5($_POST['password']));
+	$sql 		= "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
+	$result 	= $conn->query($sql);
 
 	while($row = $result->fetch_assoc()) {
 		$_SESSION['username'] 	= $username;
@@ -22,6 +22,6 @@
 		$_SESSION['credits'] 	= $row['credits'];
 		header('Location: /soccergamble2_git/index');
 	}
-	echo "<div class='alert'>Je gegevens kloppen niet bruur wtf man wat doe je =(</div>";
+	echo "<div class='alert'>Je gegevens kloppen niet. Ga terug en probeer het nog een keer</div>";
 
 ?>

@@ -25,6 +25,11 @@
 					Profiel
 				</span>
 			</li>
+			<?php if($_SESSION['rights'] == 3) : ?>
+				<li>
+					Admin Panel
+				</li>
+			<?php endif; ?>
 			<li>
 				<span class="clickable" onclick="window.location.href = './controllers/logout.php';">
 					Uitloggen

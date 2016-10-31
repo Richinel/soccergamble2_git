@@ -1,4 +1,7 @@
-<?php include('includes/header.php'); ?>
+<?php 
+	$title = "Wedstrijden";
+	include('includes/header.php'); 
+?>
 
 	<div class="page_content content">
 		<div class="title_box">

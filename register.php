@@ -1,4 +1,7 @@
-<?php include('includes/header.php'); ?>
+<?php 
+	$title = "Account";
+	include('includes/header.php'); 
+?>
 
 	<div class="content register">
 		<div class="title_box">

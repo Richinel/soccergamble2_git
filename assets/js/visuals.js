@@ -15,6 +15,10 @@ var main = function() {
         $('#search_modal').fadeToggle(300);
     }); 
 
+    $('#mobile_search').click(function() {
+        $('#search_modal').fadeToggle(300);
+    });
+
     $('.menu_container').click(function() {
     	$('.mobile_menu').fadeToggle(300);
     }); 
