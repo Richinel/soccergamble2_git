@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/kube.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/component.css">
-	<link rel="icon" type="image/x-icon" href="./favicon.ico" />
+	<link rel="icon" type="image/png" href="./favicon.png" />
 
 	<script src="assets/js/jquery-3.1.1.min.js"></script>
 	<script src="assets/js/visuals.js"></script>

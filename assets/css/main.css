@@ -75,6 +75,7 @@ p {
   margin-left: 30px;
   padding-bottom: 5px;
   transition: 50ms ease-in;
+  cursor: pointer;
 }
 .nav .wrapper ul li a {
   color: white;
