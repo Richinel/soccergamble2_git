@@ -515,3 +515,25 @@ footer .wrapper table td a:hover {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
+#DataDiv {
+  max-width: 800px;
+  margin: auto;
+  font-size: 20px;
+}
+#DataDiv .row {
+  border-bottom: 1px solid white;
+}
+#DataDiv .row .col {
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#DataDiv a {
+  color: white;
+  opacity: 0.6;
+  border-bottom: 1px solid white;
+}
+#DataDiv a:hover {
+  color: white;
+  opacity: 1.0;
+}

@@ -7,7 +7,7 @@
 	$in=$_GET['txt']; 
 	  
 	if(!ctype_alnum($in)){  
-		echo "Geen resultaat";  
+		echo "<p style='color: white; font-size: 20px;'>Geen resultaat</p>";  
 	}  
 
 	// Als het aantal resultaten groter is dan 0 en kleiner dan 20 voer een query uit.  
@@ -22,9 +22,19 @@
 			//$id = $row['id'];      
 			$home_squad = $row['home_squad'];  
 			$away_squad = $row['away_squad'];  
-			$id = $row['id'];  
+			$score		= $row['score'];
+			$id 		= $row['id'];  
 
-			echo "<a href=info.php?id=$id>$home_squad - $away_squad</a></br>";  
+			echo "
+				<div class='recents_item'>
+                    <div class='row between centered'>
+                        <div class='col'><span>".$row["home_squad"]."</span></div>
+                        <div class='col score'><div>".$row["score"]."</div></div>
+                        <div class='col'><span>".$row["away_squad"]."</span></div>
+                    </div>
+                </div>
+             	";
+                
 		}  
 	}  
 ?>
