@@ -13,6 +13,7 @@
 	<script src="assets/js/jquery-3.1.1.min.js"></script>
 	<script src="assets/js/visuals.js"></script>
 	<script src="assets/js/modalEffects.js"></script>
+	<script src="assets/js/search.js"></script>
 </head>
 <body>
 
