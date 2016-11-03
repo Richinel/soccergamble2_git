@@ -538,12 +538,12 @@ footer .wrapper table td a:hover {
   text-align: center;
   margin-bottom: 10px;
 }
-#DataDiv a {
+#DataDiv .row a {
   color: white;
   opacity: 0.6;
   border-bottom: 1px solid white;
 }
-#DataDiv a:hover {
+#DataDiv .row a:hover {
   color: white;
   opacity: 1.0;
 }

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Machine: 127.0.0.1
--- Gegenereerd op: 23 okt 2016 om 22:40
+-- Gegenereerd op: 03 nov 2016 om 19:22
 -- Serverversie: 5.6.17
 -- PHP-versie: 5.5.12
 
@@ -62,15 +62,16 @@ CREATE TABLE IF NOT EXISTS `users` (
   `credits` int(11) NOT NULL,
   `rights` int(10) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `users`
 --
 
 INSERT INTO `users` (`id`, `username`, `firstname`, `lastname`, `password`, `email`, `credits`, `rights`) VALUES
-(1, 'richinel', 'Richinel', 'Jarbandhan', '1234567', 'rj_1993@live.nl', 100, 3),
-(3, 'test', 'test', 'test', '098f6bcd4621d373cade4e832627b4f6', 'test', 25, 1);
+(3, 'test', 'test', 'test', '098f6bcd4621d373cade4e832627b4f6', 'test', 25, 1),
+(4, 'Richinel', 'Richinel', 'Jarbandhan', 'fcea920f7412b5da7be0cf42b8c93759', 'rj_1993@live.nl', 100, 3),
+(5, 'GrappigeAnti', 'Jandino', 'Asporaat', 'fcea920f7412b5da7be0cf42b8c93759', 'j.asporaat@live.nl', 25, 1);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

@@ -29,11 +29,13 @@
 
 			echo "
 				<div class='recents_item'>
-                    <div class='row between centered'>
-                        <div class='col'><span>".$row["home_squad"]."</span></div>
-                        <div class='col score'><div>".$row["score"]."</div></div>
-                        <div class='col'><span>".$row["away_squad"]."</span></div>
-                    </div>
+					<a href='matches'>
+	                    <div class='row between centered'>
+	                        <div class='col'><span>".$row["home_squad"]."</span></div>
+	                        <div class='col score'><div>".$row["score"]."</div></div>
+	                        <div class='col'><span>".$row["away_squad"]."</span></div>
+	                    </div>
+	             	</a>
                 </div>
              	";
                 
