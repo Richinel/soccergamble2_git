@@ -361,6 +361,10 @@ p {
   max-width: 1370px;
   margin: 100px auto auto;
 }
+.search_modal form p {
+  color: white;
+  text-align: center;
+}
 .search_modal form .row {
   max-width: 800px;
   margin: auto;

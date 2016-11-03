@@ -1,7 +1,8 @@
 <div class="search_modal" id="search_modal">
 	<i class="fa fa-times" id="close_search" aria-hidden="true"></i>
-	<form name="form">
+	<form name="form" autocomplete="off">
 		<h2>Zoeken</h2>
+		<p>Hier kunt u zoeken naar wedstrijden</p>
 		<div class="row">
 			<div class="col col-10">
 				<input type="text" name="naam" onkeyup="ZoekFunctie(this.value);" required="Vul dit veld in">
