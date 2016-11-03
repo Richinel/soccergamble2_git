@@ -25,6 +25,10 @@ session_start();
 		include('includes/mobile_menu_loggedin.php');
 		include('includes/profile_modal.php');
 		include('models/profile.php');
+
+		if($_SESSION['rights'] == 3) {
+			include('admin_panel.php');
+		}
 	}
 	else {
 		include('includes/navbar.php');

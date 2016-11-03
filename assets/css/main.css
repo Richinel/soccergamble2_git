@@ -488,6 +488,12 @@ footer .wrapper table td a:hover {
     margin-top: 20px !important;
   }
 }
+.admin_table table {
+  width: 100% !important;
+}
+.admin_table table tr td {
+  max-width: 100px !important;
+}
 /*MENU BUTTON */
 .menu_container {
   position: absolute;

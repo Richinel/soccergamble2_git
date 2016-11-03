@@ -26,7 +26,7 @@
 				</span>
 			</li>
 			<?php if($_SESSION['rights'] == 3) : ?>
-				<li>
+				<li class="admin_btn">
 					Admin Panel
 				</li>
 			<?php endif; ?>

@@ -13,6 +13,10 @@ var main = function() {
 
     $('.search_btn').click(function() {
         $('#search_modal').fadeToggle(300);
+    });
+
+    $('.admin_btn').click(function() {
+        $('#admin_panel').fadeToggle(300);
     }); 
 
     $('#mobile_search').click(function() {
