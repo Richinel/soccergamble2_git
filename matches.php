@@ -39,14 +39,6 @@
 				<div class="recents">
 					<?php include('controllers/matches_db.php'); ?>
 				</div>
-
-				<!-- <?php
-					if($_SESSION['rights'] == 3) {
-						include('controllers/add_match.php');
-						include('includes/add_match_modal.php');
-						include('controllers/add_match_btn.php');
-					}	
-				?> -->
 			</fieldset>
 		</div>
 	</div>
