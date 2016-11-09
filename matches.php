@@ -10,32 +10,7 @@
 
 		<div class="wrapper">
 			<fieldset>
-				<legend>Recente wedstrijden</legend>
-				<div class="recents">
-					<div class="recents_item">
-						<div class="row between centered">
-							<div class="col"><span>Feyenoord</span></div>
-
-							<div class="col score">4 - 0</div>
-
-							<div class="col"><span>Ajax</span></div>
-						</div>
-					</div>
-
-					<div class="recents_item">
-						<div class="row between centered">
-							<div class="col"><span>Roda JC</span></div>
-
-							<div class="col score">2 - 3</div>
-
-							<div class="col"><span>Willem II</span></div>
-						</div>
-					</div>
-				</div>
-			</fieldset>
-
-			<fieldset>
-				<legend>Alle wedstrijden</legend>
+				<legend>Gespeelde wedstrijden</legend>
 				<div class="recents">
 					<?php include('controllers/matches_db.php'); ?>
 				</div>

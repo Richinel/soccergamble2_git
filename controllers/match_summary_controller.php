@@ -15,10 +15,28 @@ if ($result->num_rows > 0) {
     { 
         echo
         "
-            <div class='row'>
+            <h3>".$row['date']."</h3>
+            <div class='row centered between'>
                 <div class='col'>
-                    <span>".$row['home_squad']."</span>
-                    <span>".$row['away_squad']."</span>
+                    <h2>".$row['home_squad']."</h2>
+
+                    <p>
+                        <strong>Notatie:</strong><br>
+                        ".$row['home_notation']."
+                    </p>
+                </div>
+
+                <div class='col'>
+                    <h2 class='score2'>".$row['home_score']." - ".$row['away_score']."</h2>
+                </div>
+
+                <div class='col'>
+                    <h2>".$row['away_squad']."</h2>
+
+                    <p>
+                        <strong>Notatie:</strong><br>
+                        ".$row['away_notation']."
+                    </p>
                 </div>
             </div>
         ";
