@@ -24,7 +24,8 @@
 			//$id = $row['id'];      
 			$home_squad = $row['home_squad'];  
 			$away_squad = $row['away_squad'];  
-			$score		= $row['score'];
+			$home_score	= $row['home_score'];
+			$away_score	= $row['away_score'];
 			$id 		= $row['id'];  
 
 			echo "
@@ -32,7 +33,7 @@
 					<a href='matches'>
 	                    <div class='row between centered'>
 	                        <div class='col'><span>".$row["home_squad"]."</span></div>
-	                        <div class='col score'><div>".$row["score"]."</div></div>
+	                        <div class='col score'><div>".$row["home_score"]." - ".$row['away_score']."</div></div>
 	                        <div class='col'><span>".$row["away_squad"]."</span></div>
 	                    </div>
 	             	</a>

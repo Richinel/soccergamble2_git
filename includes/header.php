@@ -24,7 +24,7 @@ session_start();
 		include('includes/navbar_loggedin.php');
 		include('includes/mobile_menu_loggedin.php');
 		include('includes/profile_modal.php');
-		include('models/profile.php');
+		//include('controllers/profileinit.php');
 
 		if($_SESSION['rights'] == 3) {
 			include('admin_panel.php');

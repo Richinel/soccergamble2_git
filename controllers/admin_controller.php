@@ -16,16 +16,13 @@
                             ".$row["username"]."
                         </td>
                         <td>
-                            ".$row["firstname"]."
-                        </td>
-                        <td>
-                            ".$row["lastname"]."
-                        </td>
-                        <td>
                             ".$row["email"]."
                         </td>
                         <td>
                             ".$row["credits"]."
+                        </td>
+                        <td>
+                            <button class='outline'>Verwijder</button>
                         </td>
                     </tr>                   
             ";

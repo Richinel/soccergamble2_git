@@ -13,22 +13,16 @@
                 <table>
                     <tr>
                         <td>
-                            ID
+                            <strong>ID</strong>
                         </td>
                         <td>
-                         	Gebruikersnaam
+                         	<strong>Gebruikersnaam</strong>
                         </td>
                         <td>
-                         	Voornaam
+                         	<strong>E-mailadres</strong>
                         </td>
                         <td>
-                         	Achternaam
-                        </td>
-                        <td>
-                         	E-mailadres
-                        </td>
-                        <td>
-                         	Credits
+                         	<strong>Credits</strong>
                         </td>
                     </tr>
 					<?php include('./controllers/admin_controller.php'); ?>
