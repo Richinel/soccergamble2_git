@@ -14,8 +14,6 @@
 	if(strlen($in) > 0 and strlen($in) < 20 ){  
 		$sql = "SELECT * FROM matches WHERE home_squad LIKE '%$in%' OR away_squad LIKE '%$in%'";
 
-
-
 		// variabele $mysqli is het object uit de connecti.php 
 		$result = $mysqli->query($sql); 
 
